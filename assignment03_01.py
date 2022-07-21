@@ -14,4 +14,3 @@ if r1 < L < r2:
     result = "належить"
 
 print(f"Координата ({Px}, {Py}) {result} кільцю за центром у ({Cx}, {Cy}) та радіусами r1 = {r1}, r2 = {r2}")
-print(float(L))
