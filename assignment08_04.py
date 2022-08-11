@@ -36,9 +36,9 @@ word = ['house', 'goat', 'door', 'sky']
 
 
 def element_search(array, elem_to_find):
-	for i in array:
-		if i == elem_to_find:
-			return array.index(elem_to_find)
+	for i, j in enumerate(array):
+		if j == elem_to_find:
+			return i
 
 	return None
 
