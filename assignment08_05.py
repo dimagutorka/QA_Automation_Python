@@ -39,10 +39,10 @@ def store_sequence(filename, seq):
     if not len(seq):
         return
 
-    output_file = open(filename, "w")
-    for el in seq:
-        output_file.write(f'{el} \n')
-    return output_file
+    with open(filename, "w") as output_file:
+        for el in seq:
+            output_file.write(f'{el} \n')
+        return output_file
 
 
 def store_matrix(filename, matrix):
