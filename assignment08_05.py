@@ -42,7 +42,7 @@ def store_sequence(filename, seq):
     with open(filename, "w") as output_file:
         for el in seq:
             output_file.write(f'{el} \n')
-        return output_file
+    return output_file
 
 
 def store_matrix(filename, matrix):
